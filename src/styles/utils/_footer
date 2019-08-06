@@ -43,7 +43,7 @@
   @include block-center;
 }
 
-.social {
+.apps {
 
   @include flex-justify(space-between);
 
