@@ -33,10 +33,16 @@
     width: 80px;
     box-sizing: border-box;
     border-radius: 2px;
+    line-height: 40px;
+
+    &:hover {
+      box-shadow: 0 0 5px #000;
+    }
 
     &--sign-in {
       border: 1px solid $c-grey;
     }
+
     &--register {
       background-color: $bg-col;
     }
@@ -44,9 +50,11 @@
 
   &__link {
     text-decoration: none;
+
     &--black {
       color: $main-text-col;
     }
+
     &--white {
       color: $c-white;
     }
@@ -59,10 +67,24 @@
     height: 40px;
     border: 1px solid $c-grey;
     box-sizing: border-box;
-    border-radius: 2px;
+    outline: none;
+
+    &::placeholder {
+      font-size: 16px;
+      color: $text-col;
+      padding-left: 10px;
+    }
+
+    &:focus-within {
+      border: 1px solid $c-green;
+    }
 
     &--time {
       width: 65px;
+    }
+
+    &--address {
+      width: 292px;
     }
   }
 
@@ -78,8 +100,4 @@
       display: none;
     }
   }
-}
-
-.delivery-location__input--address {
-  width: 292px;
 }

@@ -28,6 +28,11 @@
     appearance: none;
     background: url("../images/down.png") 95% / 15% no-repeat #3b3b3b;
     background-size: 15px;
+    outline: none;
+
+    &:focus {
+      background-color: $c-green;
+    }
   }
 }
 
@@ -94,6 +99,11 @@
   &__text {
     font-size: 13px;
     color: $c-white;
+    transition: color 0.5s linear;
+    
+    &:hover {
+      color: $c-green;
+    }
   }
 }
 
@@ -135,6 +145,11 @@
 
   &__text {
     color: $c-white;
+    transition: color 0.5s linear;
+
+    &:hover {
+      color: $c-green;
+    }
   }
 }
 
