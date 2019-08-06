@@ -1,0 +1,28 @@
+body,
+a {
+  @include main-font;
+}
+
+a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+h2,
+input,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main,
+footer {
+  padding: 0 8px;
+}

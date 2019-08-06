@@ -1,0 +1,170 @@
+.input--320 {
+  display: none;
+}
+
+.left,
+.right,
+.bottom,
+.top {
+  position: absolute;
+  background-color: #59bd5a;
+  transition: transform 0.5s ease;
+}
+
+.bottom,
+.top {
+  height: 1px;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+}
+
+.left,
+.right {
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  transform: scaleY(0);
+}
+
+.bottom {
+  bottom: 0;
+  transform-origin: bottom right;
+}
+
+.right {
+  right: 0;
+  transform-origin: top right;
+}
+
+.top {
+  top: 0;
+  transform-origin: top left;
+}
+
+.left {
+  left: 0;
+  transform-origin: bottom left;
+}
+
+.search-block {
+  display: flex;
+  height: 48px;
+  padding-top: 8px;
+
+  @include border($c-grey);
+  
+  @include block-center;
+
+  &__conteiner {
+    margin: 32px auto 0;
+  }
+
+  &__button {
+    background-image: url("../images/Shape.png");
+    background-color: $c-white;
+
+    border: none;
+    height: 22px;
+    width: 22px;
+  }
+
+  &__input {
+    height: 24px;
+    width: 223px;
+    border: none;
+
+    color: $text-col;
+    transition: background-color 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-size: 13px;
+      color: $text-col;
+    }
+
+    &:focus ~ .right {
+      transform-origin: bottom right;
+      transform: scaleY(1);
+    }
+
+    &:focus ~ .top {
+      transform-origin: top right;
+      transform: scaleX(1);
+    }
+
+    &:focus ~ .left {
+      transform-origin: top left;
+      transform: scaleY(1);
+    }
+
+    &:focus ~ .bottom {
+      transform-origin: bottom left;
+      transform: scaleX(1);
+    }
+  }
+  &__form {
+    position: relative;
+    height: 26px;
+  }
+}
+
+.button__container {
+  margin-right: 8px;
+}
+
+.catalog {
+  padding-top: 56px;
+
+  @include block-center;
+
+  &__title {
+    font-weight: normal;
+    font-size: 22px;
+    color: $main-text-col;
+  }
+
+  &__items {
+    display: grid;
+    justify-content: space-between;
+    grid-row-gap: 16px;
+    grid-template-columns: repeat(3, 308px);
+    grid-template-rows: repeat(3, 366px);
+
+    padding-top: 16px;
+    padding-bottom: 80px;
+
+  }
+   
+}
+
+.products {
+  
+  &__place {
+    margin: 16px 0 0;
+
+    font-weight: normal;
+    font-size: 16px;
+    color: $main-text-col;
+
+  }
+  
+  &__list {
+    margin: 8px 0 0;
+
+    font-weight: normal;
+    font-size: 14px;
+    color: $text-col;
+  }
+
+  &__time {
+    margin: 10px 0 0;
+
+    font-weight: normal;
+    font-size: 13px;
+    color: $main-text-col;
+  }
+}

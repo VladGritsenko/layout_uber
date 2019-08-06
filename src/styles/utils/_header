@@ -1,0 +1,85 @@
+.header {
+  height: 72px;
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+
+  .header__container {
+
+    @include flex-block(center, space-between);
+
+    height: 100%;
+    
+    @include block-center;
+  }
+}
+
+.menu__container {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.login {
+  
+  @include flex-block(center, space-between);
+
+  margin-right: 27px;
+  width: 176px;
+
+  &__button {
+
+    @include flex-block(center, center);
+
+    height: 40px;
+    width: 80px;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    &--sign-in {
+      border: 1px solid $c-grey;
+    }
+    &--register {
+      background-color: $bg-col;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    &--black {
+      color: $main-text-col;
+    }
+    &--white {
+      color: $c-white;
+    }
+  }
+}
+
+.delivery-location {
+  
+  &__input {
+    height: 40px;
+    border: 1px solid $c-grey;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    &--time {
+      width: 65px;
+    }
+  }
+
+  &__label {
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: lowercase;
+    color: $text-col;
+
+    padding: 0 9px;
+
+    &--time {
+      display: none;
+    }
+  }
+}
+
+.delivery-location__input--address {
+  width: 292px;
+}

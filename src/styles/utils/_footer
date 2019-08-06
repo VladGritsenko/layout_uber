@@ -1,0 +1,153 @@
+.footer {
+  position: relative;
+  background-color: $bg-col;
+}
+
+.footer-logo {
+  height: 116px;
+  padding-top: 56px;
+
+  @include border($c-white);
+
+  @include block-center;
+}
+
+.navigation {
+  &__container {
+    padding-right: 97px;
+  }
+  
+  &__languages {
+    height: 40px;
+    width: 227px;
+    border: none;
+    color: $c-white;
+    padding-left: 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    appearance: none;
+    background: url("../images/down.png") 95% / 15% no-repeat #3b3b3b;
+    background-size: 15px;
+  }
+}
+
+.footer__navigation {
+  
+  @include flex-justify(flex-start);
+
+  padding-top: 32px;
+  padding-bottom: 48px;
+ 
+  @include border($c-white);
+
+  @include block-center;
+}
+
+.social {
+
+  @include flex-justify(space-between);
+
+  flex-direction: column;
+  height: 93px;
+  width: 92px;
+  padding-top: 33px;
+  box-sizing: border-box;
+
+  &__icons {
+
+    @include flex-justify(space-between);
+  
+    flex-direction: row;
+
+  }
+
+  &__name {
+    font-size: 16px;
+    color: $c-white;
+
+    &--green {
+      color: #49a144;
+
+    }
+  }
+}
+
+@include bg-img;
+
+.company__container {
+
+  @include flex-justify(space-between);
+
+  width: 400px;
+}
+
+.company-info {
+  padding-top: 7px;
+
+  &__link {
+
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
+
+  &__text {
+    font-size: 13px;
+    color: $c-white;
+  }
+}
+
+.download-links {
+
+  @include flex-justify(center);
+
+  @include border($c-white);
+
+  @include block-center;
+
+  &__container {
+
+    @include flex-justify(space-between);
+  
+    padding: 40px 0;
+    box-sizing: border-box;
+    width: 290px;
+    height: 120px;
+  }
+}
+
+.footer-info {
+  display: flex;
+  padding: 40px 0;
+
+  color: $c-white;
+  font-size: 11px;
+
+  @include block-center;
+
+  &__container {
+
+    @include flex-justify(space-between);
+
+    width: 330px;
+    padding-left: 185px;
+  }
+
+  &__text {
+    color: $c-white;
+  }
+}
+
+.button-up {
+  position: absolute;
+  
+  @include flex-block(center, center);
+
+  background-color: #59bd5a;
+
+  border-radius: 2px;
+  height: 80px;
+  width: 80px;
+  right: 16px;
+  bottom: 20px;
+}
