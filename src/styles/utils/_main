@@ -168,8 +168,8 @@
     color: $main-text-col;
   }
 
-   &__img:hover {
-     opacity: 0.75;
-     cursor: pointer; 
+  &__img:hover {
+    opacity: 0.75;
+    cursor: pointer; 
   }
 }
