@@ -165,4 +165,11 @@
   width: 80px;
   right: 16px;
   bottom: 20px;
+
+  &:hover {
+    animation-name: slidein;
+    animation-duration: 0.4s;
+    animation-iteration-count: 2;
+    background-color: darken(#59bd5a, 15%);
+  }
 }

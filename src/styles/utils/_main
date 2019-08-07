@@ -167,4 +167,9 @@
     font-size: 13px;
     color: $main-text-col;
   }
+
+   &__img:hover {
+     opacity: 0.75;
+     cursor: pointer; 
+  }
 }
