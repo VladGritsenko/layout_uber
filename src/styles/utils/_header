@@ -39,6 +39,11 @@
       box-shadow: 0 0 5px #000;
     }
 
+    &:active {
+      background-color: darken($c-grey, 15%);
+      box-shadow: none;
+    }
+
     &--sign-in {
       border: 1px solid $c-grey;
     }
@@ -50,6 +55,10 @@
 
   &__link {
     text-decoration: none;
+
+    &:active {
+      color: $c-white;
+    }
 
     &--black {
       color: $main-text-col;
