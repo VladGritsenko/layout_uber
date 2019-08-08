@@ -36,7 +36,7 @@
     line-height: 40px;
 
     &:hover {
-      box-shadow: 0 0 5px #000;
+      box-shadow: 0 3px 8px rgba(61, 78, 97, 0.5);
     }
 
     &:active {
@@ -77,15 +77,21 @@
     border: 1px solid $c-grey;
     box-sizing: border-box;
     outline: none;
+    text-indent: 12px;
+    font-size: 16px;
+    color: $text-col;
 
-    &::placeholder {
-      font-size: 16px;
-      color: $text-col;
-      padding-left: 10px;
+    &:placeholder {
+      color: #eee;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
     }
 
     &:focus-within {
       border: 1px solid $c-green;
+      box-shadow: 0 3px 8px rgba(61, 78, 97, 0.2);
     }
 
     &--time {

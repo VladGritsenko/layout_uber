@@ -56,7 +56,7 @@
   
   @include block-center;
 
-  &__conteiner {
+  &__container {
     margin: 32px auto 0;
   }
 
@@ -108,7 +108,11 @@
   }
   &__form {
     position: relative;
-    height: 26px;
+    height: 35px;
+    width: 308px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
   }
 }
 
@@ -172,4 +176,8 @@
     opacity: 0.75;
     cursor: pointer; 
   }
+}
+
+.basket__img:hover {
+  fill: red;
 }

@@ -7,7 +7,7 @@
 
 @mixin bg-img {
   @for $i from 1 through 3 {
-    .social__icons--#{nth($social-group, $i)} {
+    .apps__icons--#{nth($social-group, $i)} {
       background-image: url("../images/#{nth($social-group, $i)}.svg");
       height: 24px;
       width: 24px;

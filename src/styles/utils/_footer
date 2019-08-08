@@ -13,7 +13,7 @@
 }
 
 .navigation {
-  &__container {
+  &__wrapper {
     padding-right: 97px;
   }
   
