@@ -45,16 +45,18 @@
   }
 
   .delivery-location__input--address {
-    width: 210px;
+    width: 100%;
   }
   
   .delivery-location {
+    display: flex;
     position: relative;
     margin: 0 auto;
-    width: 295px;
+    max-width: 100%;
 
     &__input--time {
       margin-right: 16px;
+      max-width: 350px;
     }
 
     &__label--address {

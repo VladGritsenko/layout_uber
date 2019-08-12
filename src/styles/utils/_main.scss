@@ -60,23 +60,16 @@
     margin: 32px auto 0;
   }
 
-  &__button {
-    background-image: url("../images/Shape.png");
-    background-color: $c-white;
-
-    border: none;
-    height: 22px;
-    width: 22px;
-  }
-
   &__input {
     height: 24px;
     width: 223px;
     border: none;
+    padding: 0 22px;
 
     color: $text-col;
+    background: url("../images/Shape.png") 0 center / 16px no-repeat;
     transition: background-color 0.3s ease-in-out;
-
+    
     &:focus {
       outline: none;
     }
