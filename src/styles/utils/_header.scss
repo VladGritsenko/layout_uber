@@ -12,7 +12,7 @@
   }
 }
 
-.menu__container {
+.authorization__container {
   display: flex;
   align-items: center;
   height: 40px;
@@ -44,6 +44,10 @@
       box-shadow: none;
     }
 
+    &:active a {
+      color: $c-white;
+    }
+
     &--sign-in {
       border: 1px solid $c-grey;
     }
@@ -55,10 +59,6 @@
 
   &__link {
     text-decoration: none;
-
-    &:active {
-      color: $c-white;
-    }
 
     &--black {
       color: $main-text-col;

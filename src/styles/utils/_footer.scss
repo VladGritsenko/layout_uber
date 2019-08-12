@@ -63,6 +63,8 @@
     @include flex-justify(space-between);
   
     flex-direction: row;
+    transition: background-color 0.5s ease-in-out;
+    border-radius: 5px;
 
   }
 
@@ -102,7 +104,7 @@
     transition: color 0.5s linear;
     
     &:hover {
-      color: $c-green;
+      text-decoration: underline;
     }
   }
 }
@@ -143,12 +145,16 @@
     padding-left: 145px;
   }
 
+  &__copy {
+    font-size: 13px;
+  }
+
   &__text {
     color: $c-white;
     transition: color 0.5s linear;
 
     &:hover {
-      color: $c-green;
+      text-decoration: underline;
     }
   }
 }

@@ -11,6 +11,15 @@
       background-image: url("../images/#{nth($social-group, $i)}.svg");
       height: 24px;
       width: 24px;
+
+      &:hover {
+        background-color: darken($c-green, 10%);
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: darken($c-green, 30%);
+      }
     }
   }
 }

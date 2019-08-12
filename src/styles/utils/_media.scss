@@ -1,10 +1,4 @@
 @media screen and (max-width: 1024px) {
-  .catalog__items {
-    grid-template-columns: repeat(2, 308px);
-    grid-template-rows: repeat(5, 366px);
-    justify-content: space-around;
-  }
-
   .delivery-location__input--address {
     width: 215px;
   }
@@ -82,8 +76,6 @@
   }
 
   .catalog__items {
-    grid-template-columns: 308px;
-    grid-template-rows: repeat(4, 356px);
     justify-content: center;
   }
 
@@ -98,7 +90,7 @@
     }
   }
 
-  .basket {
+  .header-basket {
     display: none;
   }
 
