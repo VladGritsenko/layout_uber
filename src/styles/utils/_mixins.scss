@@ -1,6 +1,54 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
+@mixin main-font {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+@mixin bg-img {
+  @for $i from 1 through 3 {
+    .apps__icons--#{nth($social-group, $i)} {
+      background-image: url("../images/#{nth($social-group, $i)}.svg");
+      height: 24px;
+      width: 24px;
+
+      &:hover {
+        background-color: darken($c-green, 10%);
+        cursor: pointer;
+      }
+
+      &:active {
+        background-color: darken($c-green, 30%);
+      }
+    }
   }
 }
+
+@mixin block-center {
+  max-width: 962px;
+  margin: 0 auto;
+}
+
+@mixin flex-block($align-items, $justify-content) {
+  display: flex;
+  align-items: #{$align-items};
+  justify-content: #{$justify-content};
+}
+
+@mixin flex-justify($justify-content) {
+  display: flex;
+  justify-content: #{$justify-content};
+}
+
+@mixin border($color) {
+  box-sizing: border-box;
+  border-bottom: 1px solid #{$color};
+}
+
+@mixin display {
+  @for $d from 5 through 9 {
+    .catalog__item:nth-child(#{$d}) {
+      display: none;
+    }
+  }
+}  
